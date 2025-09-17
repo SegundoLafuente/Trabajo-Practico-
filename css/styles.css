@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    height: 70px;
+    border-bottom: solid grey 2px;
+}
+.lista_arriba{
+   display: flex;
+   gap: 30%;
+}
+.lista_arriba a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+.logo{
+    align-items: center;
+    border-radius: 60%;
+    width: 35%;
+}
+.barra_arriba{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;   
+}
+.busqueda{
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    margin-right: -80%;
+}
+.busqueda input{
+     padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+}
+.busqueda button{
+    padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+}
