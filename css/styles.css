@@ -6,9 +6,10 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    background-color: black;
 }
 header{
-    background-color: black;
+    background-color: rgba(27, 28, 28, 1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,7 +17,6 @@ header{
     text-align: center;
     font-family: sans-serif;
     height: 70px;
-    border-bottom: solid grey 2px;
 }
 .lista_arriba{
    display: flex;
@@ -54,4 +54,32 @@ header{
       border: none;
       border-radius: 5px;
       background-color: white;
+}
+.ver_mas{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.contenedor{
+    background-color: rgba(240, 240, 240, 1);
+    max-width: 800px;
+    margin-left: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5%;
+}
+.h1_vendidos{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    display: flex;
 }
