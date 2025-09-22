@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HOME</title>
+    <title>LOGIN</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-             <div class="barra_arriba">
-        <div>
-            <a href="./index.html"><img class="logo" src="./imgs/Logo.apple.png" alt="Logo de la marca"></a>
+        <div class="barra_arriba">
+            <div>
+                <a href="./index.html"><img class="logo" src="./imgs/Logo.apple.png" alt="Logo de la marca"></a>
+            </div>
+            <div class="lista_arriba">
+                <a href="./index.html">Home</a>
+                <a href="./login.html">Login</a>
+                <a href="./register.html">Register</a>
+            </div>
+            <form class="busqueda" action="./search_result.html" method="get">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
         </div>
-        <div class="lista_arriba">
-            <a href="./index.html">Home</a>
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Register</a>
-        </div>
-
-      <form class="busqueda" action="./search_result.html" method="get">
-      <input type="text" placeholder="Buscar...">
-      <button type="submit">Buscar</button>
-      </form>
-
-</div>
     </header>
     <main>
-
+        <section>
+            <h1>LOGIN</h1>
+            <form class="formlogin" action="./login.html" method="get">
+                <article class="email">
+                    <p>Email</p>
+                    <label for="mail"></label>
+                    <input class="barramail" id="mail" type="email" name="mail" value="" placeholder="Ingresa tu email">
+                </article>
+                <article class="contraseña">
+                    <p>Contraseña</p>
+                    <label for="contraseña"></label>
+                    <input class="barracontraseña" id="contraseña" type="password" name="contraseña" value="" placeholder="password">
+                </article>
+                <article>
+                    <button id="Ingresar" type="submit">Ingresar</button>
+                </article>
+                <article class="botoningresar">
+                    <a href="./register.html">No tengo cuenta</a>
+                </article>
+            </form>
+        </section>
     </main>
     <footer>
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>

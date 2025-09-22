@@ -54,6 +54,7 @@ header{
       border: none;
       border-radius: 5px;
       background-color: white;
+<<<<<<< HEAD
 }
 .ver_mas{
     background-color: black;
@@ -163,4 +164,6 @@ footer{
     font-size: 13px;
     color: white;
     margin-top: 3%;
+=======
+>>>>>>> df48794edf186f146dd20532aa0ea0d38fe6b7cc
 }
