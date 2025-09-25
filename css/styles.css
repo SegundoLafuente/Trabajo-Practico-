@@ -45,7 +45,7 @@ header{
     margin-right: -80%;
 }
 .busqueda input{
-     padding: 5px 10px;
+    padding: 5px 10px;
       border-radius: 5px;
       border: none;
 }
@@ -54,6 +54,17 @@ header{
       border: none;
       border-radius: 5px;
       background-color: white;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 60px;
+    gap: 30px;
+}
+.categorias a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 .ver_mas{
     background-color: black;
