@@ -66,6 +66,53 @@ header{
     text-decoration: none;
     font-family: sans-serif;
 }
+.h2_register {
+    color: white;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+
+.main_register {
+    background-color: white;
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 150px;
+    height: 220px;
+    
+}
+
+.input_registermail {
+    background-color:black;
+    width: 75%;
+    margin-left: 5px;
+}
+
+.botonregister{
+  margin-left: 5px;
+}
+.aceptoregister{
+    color: rgb(111, 26, 26);
+    margin-left: 5px;
+}
+.mail{
+    margin-left: 5px;
+    
+}
+.registrarme {
+    background-color: rgb(87, 165, 213);
+    width: 20%;
+    border: none;
+}
+
+.main_product {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 650px;
+    align-items: center;
+
+}
 .ver_mas{
     background-color: black;
     border-radius: 15%;
@@ -167,15 +214,11 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: rgba(27, 28, 28, 1);
-    width: 1180px;
     height: 47px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
     font-size: 13px;
     color: white;
     margin-top: 3%;
-    margin-left: 80px;
 }
