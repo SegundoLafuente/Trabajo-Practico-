@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HOME</title>
+    <title>REGISTER</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +24,95 @@
         </div>
         <div class="categorias">
             <a href="./category.html">Celulares</a>
-            <a href="">Tablets</a>
-            <a href="">Auriculares</a>
+            <a href="./category.html">Tablets</a>
+            <a href="./category.html">Auriculares</a>
         </div>
     </header>
     <main>
+    <section class="contenedor_register">
+    <h2 class="h2_registro"><strong>REGISTRATE</strong></h2>
 
+    <form class="formulario" action="./index.html" method="GET">
+
+    <div class="nombre">
+
+    <label class="nombre1" for="nombre">Nombre</label>
+    <br>
+    <input class="nombre2" type="text" id="nombre" name="nombre" required placeholder="Ingresa tu Nombre">
+
+    </div>
+
+    <div class="emails">
+    <label class="nombre1" for="email">Email</label>
+    <br>
+    <input class="nombre2" type="email" id="email" name="email" required placeholder="Ingresa tu Email">
+
+    </div>
+
+    <div class="contraseña">
+    <label class="nombre1" for="password">Contraseña</label>
+    <br>
+    <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
+
+    </div>
+
+    <div class="nacimiento">
+
+    <label class="titulos" for="pais"><strong>País de Nacimiento</strong></label>
+    <br>
+    <br>
+    <select class="opciones_pais" name="pais" id="pais">
+        <option value="ar">Argentina</option>
+        <option value="br">Brasil</option>
+        <option value="ur">Uruguay</option>
+        <option value="ch">Chile</option>
+        <option value="pa">Paraguay</option>
+    </select>
+    
+    </div>
+
+    <div class="generos1"> 
+<br>
+    <label class="titulos" for="genero">Género</label>
+    <br>
+    <div class="generos">
+        <input class="op" type="radio" name="genero" value="masculino"> Masculino
+        <input class="op" type="radio" name="genero" value="femenino"> Femenino
+        <input class="op" type="radio" name="genero" value="otro"> Otro
+    </div>
+
+    </div>
+    <div class="check">
+    <label class="titulos" for="hobbies">Hobbies</label>
+        <br>
+        <input class="box" type="checkbox" name="hobbies" value="guitarra"> Guitarra
+        <input class="box" type="checkbox" name="hobbies" value="futbol"> Fútbol
+        <input class="box" type="checkbox" name="hobbies" value="Tenis"> Tenis
+        <input class="box" type="checkbox" name="hobbies" value="programacion"> Programación
+
+    </div>
+
+    <div class="coments">
+    <label class="titulos" for="comentarios">Dejános tus Comentarios</label>
+    <br>
+    <br>
+    <textarea name="comentarios" id="comentarios" placeholder="Deja tu comentario Aquí"></textarea>
+    </div>
+
+    <div class="condiciones">
+        <input type="checkbox" name="condiciones" id="condiciones" required>
+        <label for="condiciones">Acepto los Términos y Condiciones</label>
+    </div>
+
+    <div class="boton">
+        <input type="submit" class="enviar" value="Enviar">
+        <input type="reset" class="resetear" value="Cancelar">
+    </div>
+    </form>
     </main>
     <footer>
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>
     </footer>
+    </section>
 </body>
 </html>
