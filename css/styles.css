@@ -222,3 +222,38 @@ footer{
     color: white;
     margin-top: 3%;
 }
+.portada_category{
+    width: 100%;
+    height: 300px;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+.h1_category{
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.productos_category{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productos_category article{
+    width: 200px;
+}
+.celulares_category{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 17%;
+}
+.productos_category p{
+    color: white;
+    padding: 10px;
+}
