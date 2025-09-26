@@ -99,7 +99,7 @@ header{
 .main_product {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+   
     padding: 15px;
     height: 650px;
     align-items: center;
@@ -385,4 +385,44 @@ footer{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.pproduct {
+    color: white;
+    width: 500px;
+}
+
+.imgproduct {
+    width: 750px;
+    height: 400px;
+}
+
+.h2_product {
+    color: white;
+}
+.h3_product {
+
+width: 150px;
+}
+
+.particle{
+    display: flex;
+    align-items: center;
+  
+}
+
+.estrellas {
+    width: 150px;
+    margin-right: 30px;
+
+}
+.pproductuno
+{
+    margin-top: 10px;
+    color: white;
+}
+
+.estrellasdiv {
+    margin-left: 500px;
+   
 }
