@@ -24,32 +24,40 @@
         </div>
         <div class="categorias">
             <a href="./category.html">Celulares</a>
-            <a href="">Tablets</a>
-            <a href="">Auriculares</a>
+            <a href="./category.html">Tablets</a>
+            <a href="./category.html">Auriculares</a>
         </div>
     </header>
     <main>
-        <section>
-            <h1>LOGIN</h1>
-            <form class="formlogin" action="./login.html" method="get">
-                <article class="email">
-                    <p>Email</p>
-                    <label for="mail"></label>
-                    <input class="barramail" id="mail" type="email" name="mail" value="" placeholder="Ingresa tu email">
-                </article>
-                <article class="contraseña">
-                    <p>Contraseña</p>
-                    <label for="contraseña"></label>
-                    <input class="barracontraseña" id="contraseña" type="password" name="contraseña" value="" placeholder="password">
-                </article>
-                <article>
-                    <button id="Ingresar" type="submit">Ingresar</button>
-                </article>
-                <article class="botoningresar">
-                    <a href="./register.html">No tengo cuenta</a>
-                </article>
-            </form>
-        </section>
+        <section class="contenedor_login">
+    <h2 class="h2_login"><strong>BIENVENIDO</strong></h2>
+
+    <form class="formulario" action="./index.html" method="GET">
+
+    <div class="emails">
+    <label class="nombre1" for="email">Email</label>
+    <br>
+    <input class="nombre2" type="email" id="email" name="email" required placeholder="Ingresa tu Email">
+
+    </div>
+
+    <div class="contraseña">
+    <label class="nombre1" for="password">Contraseña</label>
+    <br>
+    <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
+
+    </div>
+
+    <div class="recordar">
+        <input type="checkbox" name="condiciones" id="condiciones" required>
+        <label for="condiciones">Recordarme</label>
+    </div>
+
+    <div class="boton">
+        <input type="submit" class="ingresar" value="Ingresar">
+    </div>
+    </form>
+    </section>
     </main>
     <footer>
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>
