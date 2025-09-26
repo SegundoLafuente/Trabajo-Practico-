@@ -261,3 +261,86 @@ footer{
     font-size: 17px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.contenedor_registro{
+    width: 350px;
+}
+.h2_registro{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 585px;
+}
+
+.formulario{
+    margin-top: 50px;
+    margin-left: 400px;
+    background-color: rgba(225, 224, 225, 1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 540px;
+}
+.nombre1{
+   font-size: 20px; 
+}
+.nombre2{
+    margin: 5px;
+    margin-left: 0px;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 330px;
+}
+.titulos{
+    font-weight: bold;
+    font-size: 20px;
+}
+.opciones_pais{
+    width: 170px
+}
+.generos{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.nombre{
+    margin-left: 67px;
+}
+.emails{
+    margin-left: 67px;
+}
+.contraseña{
+    margin-left: 67px;
+}
+.nacimiento{
+    margin-left: 67px;
+}
+.generos1{
+    margin-left: 67px;
+}
+.op{
+    margin-right: 15px;
+}
+.check{
+    margin-left: 67px;
+}
+.box{
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.coments{
+    margin-left: 67px;
+    margin-top: 15px;
+}
+.condiciones{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.boton{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.recordar{
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.ingresar{
+    width: 100px;
+    height: 30px;
+}
