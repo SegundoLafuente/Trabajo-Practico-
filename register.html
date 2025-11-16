@@ -18,7 +18,7 @@
                 <a href="./register.html">Register</a>
             </div>
             <form class="busqueda" action="./search_result.html" method="get">
-                <input type="text" placeholder="Buscar...">
+                <input type="text" name="busquedaBarra" placeholder="Buscar...">
                 <button type="submit">Buscar</button>
             </form>
         </div>
@@ -43,60 +43,24 @@
     </div>
 
     <div class="emails">
-    <label class="nombre1" for="email">Email</label>
-    <br>
-    <input class="nombre2" type="email" id="email" name="email" required placeholder="Ingresa tu Email">
-
+        <label class="nombre1" for="email">Email</label>
+        <br>
+        <input class="nombre2" type="email" id="email" name="email" required placeholder="Ingresa tu Email">
+        <div class="mail-invalido"></div>
     </div>
 
     <div class="contraseña">
-    <label class="nombre1" for="password">Contraseña</label>
-    <br>
-    <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
-
-    </div>
-
-    <div class="nacimiento">
-
-    <label class="titulos" for="pais"><strong>País de Nacimiento</strong></label>
-    <br>
-    <br>
-    <select class="opciones_pais" name="pais" id="pais">
-        <option value="ar">Argentina</option>
-        <option value="br">Brasil</option>
-        <option value="ur">Uruguay</option>
-        <option value="ch">Chile</option>
-        <option value="pa">Paraguay</option>
-    </select>
-    
-    </div>
-
-    <div class="generos1"> 
-<br>
-    <label class="titulos" for="genero">Género</label>
-    <br>
-    <div class="generos">
-        <input class="op" type="radio" name="genero" value="masculino"> Masculino
-        <input class="op" type="radio" name="genero" value="femenino"> Femenino
-        <input class="op" type="radio" name="genero" value="otro"> Otro
-    </div>
-
-    </div>
-    <div class="check">
-    <label class="titulos" for="hobbies">Hobbies</label>
+        <label class="nombre1" for="password">Contraseña</label>
         <br>
-        <input class="box" type="checkbox" name="hobbies" value="guitarra"> Guitarra
-        <input class="box" type="checkbox" name="hobbies" value="futbol"> Fútbol
-
-        <input class="box" type="checkbox" name="hobbies" value="programacion"> Programación
-
+        <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
+        <div class="contraseña-invalida"></div>
     </div>
 
-    <div class="coments">
-    <label class="titulos" for="comentarios">Dejános tus Comentarios</label>
-    <br>
-    <br>
-    <textarea name="comentarios" id="comentarios" placeholder="Deja tu comentario Aquí"></textarea>
+    <div class="reContraseña">
+        <label class="nombre1" for="password">Repetir contraseña</label>
+        <br>
+        <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa nuevamente tu contraseña">
+        <div class="reContraseña-invalida"></div>
     </div>
 
     <div class="condiciones">
@@ -105,9 +69,13 @@
     </div>
 
     <div class="boton">
-        <input class="botonazul" type="submit" class="enviar" value="Enviar">
-        <input class="botonazul1" type="reset" class="resetear" value="Cancelar">
+        <input class="botonazul" type="submit" class="enviar" value="Registrame">
     </div>
+
+    <div class="ya_tengo">
+        <a href="./login.html">Ya tengo cuenta</a>
+    </div>
+
     </form>
    </section>
    
@@ -116,5 +84,6 @@
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>
     </footer>
     </section>
+    <script src="./js/index.js"></script>
 </body>
 </html>
