@@ -38,27 +38,33 @@
     <form class="formulario" action="./index.html" method="GET">
 
     <div class="emails">
-    <label class="nombre1" for="email">Email</label>
-    <br>
-    <input class="nombre2" type="email" id="email" name="email" required placeholder="Ingresa tu Email">
+        <label class="nombre1" for="email">Email</label>
+        <br>
+        <input class="nombre2" type="email" id="email" name="email" placeholder="Ingresa tu Email">
+        <div class="mail-invalido"></div>
 
     </div>
 
     <div class="contraseña">
-    <label class="nombre1" for="password">Contraseña</label>
-    <br>
-    <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
-
+        <label class="nombre1" for="password">Contraseña</label>
+        <br>
+        <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
+        <div class="contraseña-invalida"></div>
     </div>
 
     <div class="recordar">
-        <input type="checkbox" name="condiciones" id="condiciones" required>
+        <input type="checkbox" name="condiciones" id="condiciones">
         <label for="condiciones">Recordarme</label>
     </div>
 
     <div class="boton">
         <input type="submit" class="ingresar" value="Ingresar">
     </div>
+
+    <div class="ya_tengo">
+        <a href="./register.html">No tengo cuenta</a>
+    </div>
+
     </form>
     </section>
     </main>
@@ -66,5 +72,6 @@
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
