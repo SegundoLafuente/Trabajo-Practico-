@@ -15,4 +15,3 @@ formBusqueda.addEventListener("submit" , function(event) {
         this.submit()
     }
 })
-console.log("submit")
