@@ -251,6 +251,14 @@ footer{
     justify-content: space-between;
     padding: 50px;
 }
+.img_busqueda{
+    width: 20%;
+}
+.articulo_busqueda{
+    border: solid rgba(27, 28, 28, 1) 2px ;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
 .productos_category article{
     width: 400px;
     display: flex;

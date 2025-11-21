@@ -36,7 +36,7 @@ console.log(data.products)
             <div>
             <h3>${data.products[i].title}</h3>
             <p> ${data.products[i].description}</p> 
-            <a href="product.html?id=${data.products[i].id}"> <button>Ver Detalles</button> </a>
+            <a href="product.html?id=${data.products[i].id}"> <button class = "boton_detalle">Ver Detalles</button> </a>
             </div>
             </article>`
         }
