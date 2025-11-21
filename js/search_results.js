@@ -1,9 +1,13 @@
-let busqueda = document.querySelector('#input_busqueda').value
-formBus = document.querySelector('.busqueda')
+let queryString = location.search
+let queryStringObj = new URLSearchParams(queryString)
+let busqueda = queryStringObj.get('busqueda')
 
-formBus.addEventListener('submit', function(event){
-    event.preventDefault()
-    fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
+
+let buscarResultado = document.querySelector('#input_busqueda')
+let formBus = document.querySelector('.busqueda')
+
+
+fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
     .then(function(response){
         return response.json()
     })
@@ -30,4 +34,3 @@ formBus.addEventListener('submit', function(event){
     .catch(function(error){
         console.log(error)
     })
-})
