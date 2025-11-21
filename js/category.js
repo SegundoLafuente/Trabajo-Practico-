@@ -1,53 +1,66 @@
-let params = new URLSearchParams(location.search);
-let categoryParam = params.get('category');
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString)
 
-let title1 = document.querySelector('.h1_category');
+let idCategory = queryStringObj('idCategory')
 
-if (title1 && categoryParam){
-    title1.textContent = 'Categoria: ' + categoryParam
-}
+fetch(`https://dummyjson.com/products/category/${idCategory}`)
+	.then(function(response){
+		return response.json();
+	})
+	.then(function(data){
+        let tituloCategory = document.querySelector('h1_category')
+        tituloCategory.innerText = `${idCategory}`
+        let categoria = document.querySelector('productos_category')
 
-if (categoryParam) {
-  fetch('https://dummyjson.com/products')
+        let productos = ''
+        for(i=0; i<data.products.length; i++){
+            productos += `<article>
+			<img src='${data.products[i].images[0]}' alt=${data.products[i].title}>
+			<div>
+			<h3>${data.products[i].title}</h3>
+			<p> ${data.products[i].description}</p> 
+			<a href="product.html?id=${data.products[i].id}"> <button>Ver detalles</button> </a>
+		    </div>
+			</article>`
+        }
+        categoria.innerHTML =productos
+	})
+	.catch(function(error){
+		console.log(error)
+	})
+
+fetch('https://dummyjson.com/products/category-list')
     .then(function(response){
-      return response.json();
+        return response.json()
     })
     .then(function(data){
-        let productos = data.products || [];
-        let filtrados = [];
-        for (let i=0; i<productos.length; i++){
-            if (productos[i].category === categoryParam) filtrados.push(productos[i])
-        }
-    let main = document.querySelector('main');
+        let smartphones = document.querySelector('#smartphones')
+        smartphones.innerHTML = `<a href="category.html?categoryId=${data[6]}">Celulares</a>`
 
-    let div = document.createElement('div');    
-    div.className = 'div_category'
+        let tablets = document.querySelector('#tablets')
+        tablets.innerHTML = `<a href="category.html?categoryId=${data[18]}">Ipads</a>`
 
-    if (filtrados.length === 0) {
-        div.innerHTML = '<p>No hay productos para la categoría: ' + categoryParam + '</p>';
-      }
-      else{
-        for (let a=0; a< filtrados.length; a++) {
-          let nuevaLista = filtrados[a];
-          let articulo = document.createElement('article');
-          articulo.innerHTML = '<a href="product.html?id=' + nuevaLista.id + '">\
-                                <img src="' + (nuevaLista.thumbnail || '') + '" alt="' + nuevaLista.title + '">\
-                                <p>' + nuevaLista.title + '</p>\
-                                <p class="precio_category">$' + nuevaLista.price + '</p>\
-                                </a>';
-          div.append(articulo)
-      }
-    }
+        let laptops = document.querySelector('#laptops')
+        laptops.innerHTML = `<a href="category.html?categoryId=${data[11]}">Celulares</a>`
     })
     .catch(function(error){
-      console.log('El error es: ' + error);
-    });
-}
-else{
-      let main = document.querySelector('main');
-    if (main){
-        let nuevoParrafo = document.createElement('p');
-        nuevoParrafo.textContent = 'Categoria no Especificada';
-        main.append(nuevoParrafo);
+        console.log(error)
+    })  
+
+let formBusqueda = document.querySelector(".busqueda")
+let barraBusqueda = document.querySelector(".busqueda input")
+
+formBusqueda.addEventListener("submit" , function(event) {
+    event.preventDefault();
+    if ((barraBusqueda.value == "") || ((barraBusqueda.value).length <3)) {
+        if (barraBusqueda.value == ""){
+            alert("No buscaste nada")
+        }
+        if (((barraBusqueda.value).length < 3) && ((barraBusqueda.value).length >0)){
+            alert("El termino que buscas debe tener al menos 3 caracteres")
+        }
     }
-}
+    else{
+        this.submit()
+    }
+})
