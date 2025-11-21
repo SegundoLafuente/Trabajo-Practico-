@@ -13,7 +13,7 @@ fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
     })
     .then(function(data){
 
-        let contenedorBusqueda = document.querySelector('productos_result')
+        let contenedorBusqueda = document.querySelector('.productos_result')
         let articuloBus = ""
         let h1Busqueda = document.querySelector('#h1_busqueda')
 
@@ -22,11 +22,11 @@ fetch(`https://dummyjson.com/products/search?q=${busqueda}`)
         for (let i=0; i<data.products.lenght; i++){
             articuloBus += `<article> <img src= ' ${data.products[i].images[1]}' alt= ${data.products[i].title} > 
                 <div> 
-                <h3>${data.products[i].title}</h3>
+                <h3${data.products[i].title}</h3>
                 <p>${data.products[i].description}</p>
                 <a href ="product.html"> <button> Ver Detalle </button> </a>
                 </div>
-                <article>`
+                </article>`
         }
         contenedorBusqueda.innerHTML = articuloBus
 
