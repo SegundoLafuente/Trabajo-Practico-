@@ -13,12 +13,14 @@
                 <a href="./index.html"><img class="logo" src="./imgs/Logo.apple.png" alt="Logo de la marca"></a>
             </div>
             <div class="lista_arriba">
-                <a href="./index.html">Home</a>
-                <a href="./login.html">Login</a>
-                <a href="./register.html">Register</a>
+                <h2 class="bienvenido">Bienvenido</h2>
+                <a class="linkhome" href="./index.html">Home</a>
+                <a class="linklogin" href="./login.html">Login</a>
+                <a class="linkregister" href="./register.html">Register</a>
+                <a class="logout" href="">Logout</a>
             </div>
             <form class="busqueda" action="./search_result.html" method="get">
-                <input type="text" placeholder="Buscar...">
+                <input id="input_busqueda" type="text" name="busquedaBarra" placeholder="Buscar..." >
                 <button type="submit">Buscar</button>
             </form>
         </div>
@@ -38,32 +40,40 @@
     <form class="formulario" action="./index.html" method="GET">
 
     <div class="emails">
-    <label class="nombre1" for="email">Email</label>
-    <br>
-    <input class="nombre2" type="email" id="email" name="email" required placeholder="Ingresa tu Email">
+        <label class="nombre1" for="email">Email</label>
+        <br>
+        <input class="nombre2" type="email" id="email" name="email" placeholder="Ingresa tu Email">
+        <div class="mail-invalido"></div>
 
     </div>
 
     <div class="contraseña">
-    <label class="nombre1" for="password">Contraseña</label>
-    <br>
-    <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
-
+        <label class="nombre1" for="password">Contraseña</label>
+        <br>
+        <input class="nombre2" type="password" id="password" name="password" placeholder="Ingresa tu Contraseña">
+        <div class="contraseña-invalida"></div>
     </div>
 
     <div class="recordar">
-        <input type="checkbox" name="condiciones" id="condiciones" required>
+        <input type="checkbox" name="condiciones" id="condiciones">
         <label for="condiciones">Recordarme</label>
     </div>
 
     <div class="boton">
         <input type="submit" class="ingresar" value="Ingresar">
     </div>
+
+    <div class="ya_tengo">
+        <a href="./register.html">No tengo cuenta</a>
+    </div>
+
     </form>
     </section>
     </main>
     <footer>
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>
     </footer>
+    <script src="./js/login.js"></script>
+    <script src="./js/saludo.js"></script>
 </body>
 </html>

@@ -13,12 +13,14 @@
                 <a href="./index.html"><img class="logo" src="./imgs/Logo.apple.png" alt="Logo de la marca"></a>
             </div>
             <div class="lista_arriba">
-                <a href="./index.html">Home</a>
-                <a href="./login.html">Login</a>
-                <a href="./register.html">Register</a>
+                <h2 class="bienvenido">Bienvenido</h2>
+                <a class="linkhome" href="./index.html">Home</a>
+                <a class="linklogin" href="./login.html">Login</a>
+                <a class="linkregister" href="./register.html">Register</a>
+                <a class="logout" href="">Logout</a>
             </div>
             <form class="busqueda" action="./search_result.html" method="get">
-                <input type="text" placeholder="Buscar...">
+                <input id="input_busqueda" type="text" name="busquedaBarra" placeholder="Buscar..." >
                 <button type="submit">Buscar</button>
             </form>
         </div>
@@ -30,12 +32,12 @@
     </header>
     <main class="main_product">
 <section class="titulo_product">
-            <h1>iPhone 16</h1>
-            <h2>Un salto al futuro.</h2>
+            <h1 id="h1_product">iPhone 16</h1>
+            <h2 id="h2_product">Un salto al futuro.</h2>
         </section>
         <section class="abajo_product">
             <article class="img_product">
-                <img src="./imgs/Iphone 16 PRO.jfif" alt="iphone 16 pro">
+                <img id="img_product" src="./imgs/Iphone 16 PRO.jfif" alt="iphone 16 pro">
             </article>
         
         
@@ -67,5 +69,7 @@
     <footer>
         <p> <strong>Nosotros | Manuel Blanco, Cruz Dominguez, Segundo Lafuente | &nbsp; Contacto: slafuentesegura@udesa.edu.ar </strong></p>
     </footer>
+    <script src="./js/product.js"></script>
+    <script src="./js/saludo.js"></script>
 </body>
 </html>

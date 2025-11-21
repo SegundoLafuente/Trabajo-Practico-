@@ -27,6 +27,11 @@ header{
     color: white;
     font-family: sans-serif;
 }
+.bienvenido{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
 .logo{
     align-items: center;
     border-radius: 60%;
@@ -353,6 +358,15 @@ footer{
     margin-bottom: 10px;
     width: 330px;
 }
+.emails p{
+    color: red;
+}
+.contraseña p{
+    color: red;
+}
+.reContraseña p{
+    color: red;
+}
 .titulos{
     font-weight: bold;
     font-size: 20px;
@@ -371,6 +385,9 @@ footer{
     margin-left: 7px;
 }
 .contraseña{
+    margin-left: 7px;
+}
+.reContraseña{
     margin-left: 7px;
 }
 .nacimiento{
@@ -403,6 +420,10 @@ footer{
 }
 .botonazul{
    margin-right: 20px;
+}
+.ya_tengo{
+    margin-top: 20px;
+    margin-left: 100px;
 }
 .recordar{
     margin-top: 20px;
@@ -437,7 +458,7 @@ footer{
     display: flex;
     justify-content: center;
 }
- .img_product{
+.img_product{
     display: flex;
     justify-content: center;
     align-items: flex-start;
