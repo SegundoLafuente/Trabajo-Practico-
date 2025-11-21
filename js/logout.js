@@ -8,8 +8,6 @@ let register2 = document.querySelector(".linkregister")
 let linkLogout2 = document.querySelector(".logout")
 
 linkLogout.addEventListener("click" , function(){
-    console.log("hola");
-    
     localStorage.clear()
     containerBienvenida2.style.display = "none"
     containerMenu2.style.display = "inline"
