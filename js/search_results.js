@@ -20,9 +20,9 @@ formBus.addEventListener('submit', function(event){
                 <div> 
                 <h3${data.products[i].title}</h3>
                 <p>${data.products[i].description}</p>
-                <a hr>ef ="product.html"> <button> Ver Detalle </button> </a>
+                <a href ="product.html"> <button> Ver Detalle </button> </a>
                 </div>
-                <article>`
+                </article>`
         }
         contenedorBusqueda.innerHTML = articuloBus
 
