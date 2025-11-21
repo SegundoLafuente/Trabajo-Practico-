@@ -245,12 +245,12 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 100px;
     padding: 50px;
 }
 .productos_category article{
-    width: 200px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -568,10 +568,9 @@ margin-top: 5%;
     width: 100%;
 }
 .div_category{
-    margin-left: 50%;
     display: flex;
     flex-direction: column;
-    width: 150%;
+    width: 100%;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
@@ -579,7 +578,6 @@ margin-top: 5%;
 .articulo_category{
     display: flex;
     flex-direction: column;
-    margin-left: 13%;
     flex-wrap: wrap;
 }
 .boton_category{
