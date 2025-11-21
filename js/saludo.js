@@ -1,5 +1,7 @@
 let emailDelUsuario = localStorage.getItem("mailUsuario")
+let containerMenu = document.querySelector(".lista_arriba")
 let bienvenido = document.querySelector(".bienvenido")
+let containerBienvenida = document.querySelector(".saludo")
 let home = document.querySelector(".linkhome")
 let login = document.querySelector(".linklogin")
 let register = document.querySelector(".linkregister")
@@ -7,13 +9,9 @@ let linkLogout = document.querySelector(".logout")
 
 if (emailDelUsuario){
     bienvenido.innerText = "Bienvenido " + emailDelUsuario
-    bienvenido.style.display = "inline"
-    home.style.display = "none"
-    login.style.display = "none"
-    register.style.display = "none"
-    linkLogout.style.display = "inline"
+    containerBienvenida.style.display = "inline"
+    containerMenu.style.display = "none"
 }
 else{
-    bienvenido.style.display = "none"
-    linkLogout.style.display = "none"
+    containerBienvenida.style.display = "none"
 }

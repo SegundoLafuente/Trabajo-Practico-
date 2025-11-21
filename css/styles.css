@@ -27,6 +27,15 @@ header{
     color: white;
     font-family: sans-serif;
 }
+.saludo{
+    display: flex;
+    display: none;
+}
+.saludo a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
 .bienvenido{
     text-decoration: none;
     color: white;
