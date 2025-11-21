@@ -172,8 +172,6 @@ h3{
     flex-wrap: wrap;
     width: 270px;
     flex-direction: column;
-}
-.tutoriales{
     padding: 2% 2%;
 }
 .titulo_derecha{
@@ -523,6 +521,39 @@ footer{
 }
 .contenedor_h2_login{
     text-align: center;
+}
+.img_home{
+    width: 14%;
+    
+}
+#img_product{
+    width: 90%;
+}
+.div_home{
+    display: flex;
+    flex-direction: column;
+}
+.p_home{
+    color: white;
+    font-size: 15px;
+    margin-left:20% ;
+    margin-top: -10%;
+}
+.detalle_home{
+margin-top: 5%;
+}
+.boton_detalle{
+    background-color: black;
+    border-radius: 20px;
+    border: white solid 2px;
+    color: white;
+    font-weight: bold;
+    height: 34px;
+    width: 130px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
 }
 @media (max-width: 1024px) {
 header{

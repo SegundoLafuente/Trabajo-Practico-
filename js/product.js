@@ -3,6 +3,7 @@ fetch('https://dummyjson.com/products/category-list')
         return response.json()
     })
     .then(function(data){
+        console.log(data)
         let smartphones = document.querySelector('#smartphones')
         smartphones.innerHTML = `<a href="category.html?categoryId=${data[6]}">Celulares</a>`
 
@@ -21,14 +22,14 @@ let queryStringObj = new URLSearchParams(queryString)
 
 let idDispositivos = queryStringObj.get('id');
 
-fetch(`https://dummyjson.com/products/ ${idDispositivos}`)
+fetch(`https://dummyjson.com/products/${idDispositivos}`)
     .then(function(response){
         return response.json()
     })
     .then(function(data){
         let tituloProduct = document.querySelector('#h1_product')
         tituloProduct.innerText = data.title
-        let img = document.querySelector('.img_product')
+        let img = document.querySelector('#img_product')
         img.src = data.images[0]
         let slogan = document.querySelector('#h2_product')
         slogan.innerText = data.title
