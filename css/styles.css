@@ -27,6 +27,11 @@ header{
     color: white;
     font-family: sans-serif;
 }
+.bienvenido{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
 .logo{
     align-items: center;
     border-radius: 60%;
@@ -453,7 +458,7 @@ footer{
     display: flex;
     justify-content: center;
 }
- .img_product{
+.img_product{
     display: flex;
     justify-content: center;
     align-items: flex-start;
