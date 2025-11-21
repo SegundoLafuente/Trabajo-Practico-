@@ -247,12 +247,12 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 100px;
     padding: 50px;
 }
 .productos_category article{
-    width: 200px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -565,6 +565,34 @@ margin-top: 5%;
     padding: 8px;
     margin-bottom: 20px;
     font-family: sans-serif;
+}
+.img_category{
+    width: 100%;
+}
+.div_category{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.articulo_category{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.boton_category{
+    background-color: black;
+    border-radius: 20px;
+    border: white solid 2px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    margin-top: 5%;
+    font-family: sans-serif;
+    max-width: 100%;
 }
 @media (max-width: 1024px) {
 header{

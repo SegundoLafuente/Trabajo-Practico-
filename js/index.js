@@ -36,31 +36,13 @@ console.log(data.products)
             <div>
             <h3>${data.products[i].title}</h3>
             <p> ${data.products[i].description}</p> 
-            <a href="product.html?id=${data.products[i].id}"> <button>Ver detalles</button> </a>
+            <a href="product.html?id=${data.products[i].id}"> <button>Ver Detalles</button> </a>
             </div>
             </article>`
         }
         console.log(masProductos)
         console.log(distintos)
         masProductos.innerHTML = distintos
-    })
-    .catch(function(error){
-        console.log(error)
-    })
-
-    fetch('https://dummyjson.com/products/category-list')
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(data){
-        let smartphones = document.querySelector('#smartphones')
-        smartphones.innerHTML = `<a href="category.html?categoryId=${data[6]}">Smartphones</a>`
-
-        let tablets = document.querySelector('#tablets')
-        tablets.innerHTML = `<a href="category.html?categoryId=${data[18]}">Tablets</a>`
-
-        let laptops = document.querySelector('#laptops')
-        laptops.innerHTML = `<a href="category.html?categoryId=${data[11]}">Laptops</a>`
     })
     .catch(function(error){
         console.log(error)
