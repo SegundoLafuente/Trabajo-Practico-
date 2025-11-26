@@ -1,22 +1,3 @@
-fetch('https://dummyjson.com/products/category-list')
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(data){
-        console.log(data)
-        let smartphones = document.querySelector('#smartphones')
-        smartphones.innerHTML = `<a href="category.html?categoryId=${data[6]}">Celulares</a>`
-
-        let tablets = document.querySelector('#tablets')
-        tablets.innerHTML = `<a href="category.html?categoryId=${data[18]}">Tablets</a>`
-
-        let laptops = document.querySelector('#laptops')
-        laptops.innerHTML = `<a href="category.html?categoryId=${data[11]}">Laptops</a>`
-    })
-    .catch(function(error){
-        console.log(error)
-    })
-
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
 
